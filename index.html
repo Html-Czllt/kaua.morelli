@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memórias da Escola</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+</head>
+<body>
+
+<header>
+    <h1>Memórias da Escola</h1>
+</header>
+
+<div class="intro">
+    <h2>Minha História no Ensino Médio</h2>
+    <p>Comecei a estudar no Colégio Estadual Padre Claudio Morelli em 2022, um ano desafiador, onde me adaptei com dificuldades a uma nova escola e conheci novas pessoas. Em 2023, já familiarizado e com novas amizades, comecei a criar lembranças reais. Tirei fotos com amigos que ficaram eternizadas não apenas em imagens, mas profundamente dentro de mim.</p>
+</div>
+
+<div class="image-row">
+    <div class="card">
+        <img src="3.jpeg" alt="Descrição da imagem 1">
+        <div class="overlay">uma das poucas fotos em grupo que tenho salva, felizmente ela esta entre elas.</div>
+    </div>
+    <div class="card">
+        <img src="5.jpeg" alt="Descrição da imagem 2">
+        <div class="overlay">apesar de metade da minha cabeça ter ficado pra fora da foto eu gosto dela.(podia ser pior, tem um otário ali que nem na foto tá e mesmo assim ta posando pra foto KKKKKK)</div>
+    </div>
+    <div class="card">
+        <img src="6.jpeg" alt="Descrição da imagem 3">
+        <div class="overlay">Dentre estas 3 fotos, essa é a mais especial para mim, pois nela, meu amigo João está me mostrando o tamanho    do seu afeto por mim.</div>
+    </div>
+</div>
+
+<!-- Nova seção para a imagem e o botão -->
+<div class="single-image" style="text-align: center;">
+    <p style="margin-bottom: 10px;">E eu me sinto abençoado</p>
+    <p style="margin-bottom: 10px;">(E eu me sinto abençoado)</p>
+
+    <img src="1.jpeg" alt="Descrição da imagem">
+    <div style="margin-top: 10px;">
+        <button onclick="playAudioFrom(58)">Reproduzir Som</button> <!-- Toca a partir de 58 segundos -->
+    </div>
+    <audio id="audio" src="rodo.mp3"></audio>
+</div>
+
+
+<script>
+function playAudioFrom(seconds) {
+    var audio = document.getElementById('audio');
+    audio.currentTime = seconds; // Define o tempo em que deve começar a tocar
+    audio.play(); // Reproduz o áudio
+}
+</script>
+
+
+<div class="additional-images">
+    <h3>Mais Momentos</h3>
+    <div class="image-row">
+        <div class="card">
+            <img src="2.jpeg" alt="Descrição da imagem 4">
+            <div class="overlay">Foto com o cria enquanto andamos no inferno de 30 graus rumo a nossas casas depois da aula do gargamel</div>
+        </div>
+        <div class="card">
+            <img src="4.jpeg" alt="Descrição da imagem 5">
+            <div class="overlay">Novamente o João mostrando o quanto ele me ama</div>
+        </div>
+        <div class="card">
+            <img src="7.jpeg" alt="Descrição da imagem 6">
+            <div class="overlay">uma foto que tirei do rabo</div>
+        </div>
+    </div>
+    <div class="image-row">
+        <div class="card">
+            <img src="8.jpeg" alt="Descrição da imagem 7">
+            <div class="overlay"> assitindo jogo durante a aula com os cria</div>
+        </div>
+        <div class="card">
+            <img src="9.jpeg" alt="Descrição da imagem 8">
+            <div class="overlay">Outra foto aleatoria em um grupo que o João me arrastou pra tirar essa foto</div>
+        </div>
+        <div class="card">
+            <img src="10.jpeg" alt="Descrição da imagem 9">
+            <div class="overlay">O dia em que eu perdi o medo e decidi me declarar para todos, beijei meu melhor amigo e parei de fingir ser algo que não sou!</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Escola: Colégio Estadual Padre Claudio Morelli</p>
+    <p>Nome do Aluno: Kauã</p>
+    <p>Nº: 21</p>
+</footer>
+
+</body>
+</html>

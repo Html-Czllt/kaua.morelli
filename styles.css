@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Sem margem na página */
+    padding: 0; /* Sem padding na página */
+    background-color: #f4f4f4; /* Fundo claro */
+    color: #333; /* Texto escuro */
+    text-align: center; /* Centraliza o texto */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+}
+
+header {
+    padding: 20px;
+    background-color: #4a4a4a; /* Cinza escuro para o cabeçalho */
+    color: white; /* Texto branco */
+}
+
+.intro {
+    width: 80%; /* Define a largura da introdução */
+    max-width: 800px; /* Limita a largura máxima */
+    margin: 20px auto; /* Centraliza a introdução */
+    padding: 20px;
+    background-color: white; /* Fundo branco para a introdução */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    /* Remover a borda inferior */
+    padding-bottom: 0; /* Ajuste também o padding se necessário */
+}
+
+.single-image img {
+    width: 100%; /* Faz a imagem ocupar 80% da largura do contêiner */
+    max-width: 300px; /* Limita a largura máxima para 120px */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Arredonda os cantos da imagem */
+    object-fit: contain; /* Ajusta a imagem sem cortá-la */
+}
+
+
+
+.card {
+    position: relative;
+    margin: 20px; /* Aumenta a margem entre os cards */
+    width: 220px; /* Largura do card */
+    height: 220px; /* Altura do card */
+    overflow: hidden;
+    border-radius: 5px;
+    transition: transform 0.3s; /* Efeito de transição */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Eleva o card ao passar o mouse */
+}
+
+.card img {
+    width: 100%; /* Imagem ocupa toda a largura do card */
+    height: 100%; /* Imagem ocupa toda a altura do card */
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+    border-radius: 5px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro para o texto */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s; /* Efeito de transição */
+}
+
+.card:hover .overlay {
+    opacity: 1; /* Torna o texto visível ao passar o mouse */
+}
+
+.additional-images {
+    margin: 20px 0; /* Espaço acima e abaixo da nova seção */
+}
+
+.additional-images h3 {
+    margin: 20px 0; /* Espaço acima e abaixo do título */
+}
+
+.poster-section {
+    background-color: #eaeaea; /* Fundo similar a um pôster */
+    padding: 20px;
+    margin: 20px auto; /* Centraliza a seção */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 80%; /* Limita a largura da seção */
+    max-width: 600px; /* Largura máxima */
+}
+
+.poster-text {
+    max-width: 600px; /* Limita a largura do texto */
+    margin: 0 auto; /* Centraliza o texto */
+    padding: 20px;
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.poster-text h3 {
+    border-bottom: 2px solid #ccc; /* Borda abaixo do título */
+    padding-bottom: 10px; /* Espaço entre o título e a borda */
+    margin-bottom: 20px; /* Espaço entre a borda e o texto abaixo */
+    position: relative; /* Necessário para usar a margem negativa */
+}
+
+.poster-text h3::after {
+    content: ""; /* Adiciona um conteúdo vazio */
+    display: block; /* Torna-o um bloco */
+    height: 2px; /* Altura da linha */
+    background-color: #ccc; /* Cor da linha */
+    margin-top: 10px; /* Espaço acima da linha */
+    margin-left: -20px; /* Move a linha para fora do background */
+    margin-right: -20px; /* Move a linha para fora do background */
+}
+
+footer {
+    margin-top: auto; /* Empurra o rodapé para o final da página */
+    padding: 10px;
+    background-color: #4a4a4a; /* Cinza escuro para o rodapé */
+    color: white; /* Texto branco */
+}
