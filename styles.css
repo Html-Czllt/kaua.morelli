@@ -4,10 +4,10 @@ body {
     padding: 0; /* Sem padding na página */
     background-color: #f4f4f4; /* Fundo claro */
     color: #333; /* Texto escuro */
-    text-align: center; /* Centraliza o texto */
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+    text-align: center; /* Centraliza o texto */
 }
 
 header {
@@ -31,19 +31,21 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px 0;
-    /* Remover a borda inferior */
-    padding-bottom: 0; /* Ajuste também o padding se necessário */
 }
 
 .single-image img {
-    width: 100%; /* Faz a imagem ocupar 80% da largura do contêiner */
-    max-width: 300px; /* Limita a largura máxima para 120px */
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    max-width: 300px; /* Limita a largura máxima para 300px */
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 5px; /* Arredonda os cantos da imagem */
     object-fit: contain; /* Ajusta a imagem sem cortá-la */
 }
 
-
+.limited-text {
+    max-width: 80%; /* Limite a largura máxima para 80% do contêiner pai */
+    margin: 20px auto; /* Centraliza o texto horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
 
 .card {
     position: relative;
@@ -88,44 +90,6 @@ header {
 
 .additional-images {
     margin: 20px 0; /* Espaço acima e abaixo da nova seção */
-}
-
-.additional-images h3 {
-    margin: 20px 0; /* Espaço acima e abaixo do título */
-}
-
-.poster-section {
-    background-color: #eaeaea; /* Fundo similar a um pôster */
-    padding: 20px;
-    margin: 20px auto; /* Centraliza a seção */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    width: 80%; /* Limita a largura da seção */
-    max-width: 600px; /* Largura máxima */
-}
-
-.poster-text {
-    max-width: 600px; /* Limita a largura do texto */
-    margin: 0 auto; /* Centraliza o texto */
-    padding: 20px;
-    text-align: left; /* Alinha o texto à esquerda */
-}
-
-.poster-text h3 {
-    border-bottom: 2px solid #ccc; /* Borda abaixo do título */
-    padding-bottom: 10px; /* Espaço entre o título e a borda */
-    margin-bottom: 20px; /* Espaço entre a borda e o texto abaixo */
-    position: relative; /* Necessário para usar a margem negativa */
-}
-
-.poster-text h3::after {
-    content: ""; /* Adiciona um conteúdo vazio */
-    display: block; /* Torna-o um bloco */
-    height: 2px; /* Altura da linha */
-    background-color: #ccc; /* Cor da linha */
-    margin-top: 10px; /* Espaço acima da linha */
-    margin-left: -20px; /* Move a linha para fora do background */
-    margin-right: -20px; /* Move a linha para fora do background */
 }
 
 footer {
