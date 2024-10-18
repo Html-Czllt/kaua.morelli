@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0; /* Sem margem na página */
@@ -34,9 +35,7 @@ header {
 }
 
 .single-image img {
-    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
-    max-width: 300px; /* Limita a largura máxima para 300px */
-    height: auto; /* Mantém a proporção da imagem */
+width: 200px;  
     border-radius: 5px; /* Arredonda os cantos da imagem */
     object-fit: contain; /* Ajusta a imagem sem cortá-la */
 }
